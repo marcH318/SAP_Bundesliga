@@ -1,0 +1,9 @@
+{
+    "sqltools.connections": [
+        {
+            "dialect": "SQLite",
+            "name": "dbBundesliga",
+            "database": "bundesliga/sqlite.db"
+        }
+    ]
+}
