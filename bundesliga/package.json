@@ -10,6 +10,7 @@
     "express": "^4"
   },
   "devDependencies": {
+    "@sap/ux-specification": "^1.84.0",
     "sqlite3": "^5"
   },
   "scripts": {
@@ -22,5 +23,8 @@
         "model": "*"
       }
     }
-  }
+  },
+  "sapux": [
+    "app/project1"
+  ]
 }
