@@ -11,28 +11,20 @@
                 defaultRenderer: 'fiori2',
                 applications: {
                     'fe-lrop-v4': {
-                        title: 'Bundesliga Table',
+                        title: 'results',
                         description: 'A Fiori application.',
-                        additionalInformation: 'SAPUI5.Component=project1',
+                        additionalInformation: 'SAPUI5.Component=results',
                         applicationType: 'URL',
-                        url: './',
+                        url: './app/results/webapp',
                         navigationMode: 'embedded'
-                    }/*,
-                    'fe-lrop-v2': { //eig v4, kann momentan nicht geöffnet werden
-                        title: 'Submit Results',
-                        description: 'A Fiori application.',
-                        additionalInformation: 'SAPUI5.Component=submitresults',
-                        applicationType: 'URL',
-                        url: 'project1/submitresults/webapp',
-                        navigationMode: 'embedded'
-                    }*/
+                    }
                 }
             };
         </script>
 
-        <script src="https://ui5.sap.com/1.84.0/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+        <script src="https://ui5.sap.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
         <script
-            src="https://ui5.sap.com/1.84.0/resources/sap-ui-core.js"
+            src="https://ui5.sap.com/resources/sap-ui-core.js"
             data-sap-ui-libs="sap.m, sap.ushell, sap.fe.templates"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-theme="sap_fiori_3"

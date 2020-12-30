@@ -25,6 +25,9 @@
     }
   },
   "sapux": [
-    "app/project1"
+    "app/project1",
+    "app/submitresults",
+    "app/results",
+    "app/results"
   ]
 }

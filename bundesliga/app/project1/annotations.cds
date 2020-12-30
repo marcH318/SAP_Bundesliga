@@ -1,5 +1,5 @@
 using ManageService as service from '../../srv/manage-service';
-
+annotate service.Teams with @odata.draft.enabled;
 annotate service.Teams with @(
     UI : {        
         LineItem: [
@@ -9,14 +9,17 @@ annotate service.Teams with @(
             {Value: goals_scored, Label: 'Goals Scored'},
             {Value: goals_against, Label: 'Goals against'}
         ],
-        PresentationVariant: {
-            SortOrder: [
+        PresentationVariant : {
+            SortOrder : [
                 {
-                    $Type:'Common.SortOrderType',
+                    $Type : 'Common.SortOrderType',
                     Property : points,
                     Descending : true,
                 },
-            ]
-        }
+            ],
+            Visualizations : [
+                '@UI.LineItem',
+            ],
+        },
     }
 );
