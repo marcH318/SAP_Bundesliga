@@ -1,5 +1,5 @@
 using ManageService as service from '../../srv/manage-service';
-annotate service.Teams with @odata.draft.enabled;
+
 annotate service.Teams with @(
     UI : {        
         LineItem: [

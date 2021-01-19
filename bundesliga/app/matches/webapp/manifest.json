@@ -1,7 +1,7 @@
 {
     "_version": "1.29.0",
     "sap.app": {
-        "id": "results",
+        "id": "matches",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -11,7 +11,7 @@
         "description": "{{appDescription}}",
         "dataSources": {
             "mainService": {
-                "uri": "/manage/",
+                "uri": "/result/",
                 "type": "OData",
                 "settings": {
                     "odataVersion": "4.0"
@@ -73,41 +73,41 @@
             "routes": [
                 {
                     "pattern": ":?query:",
-                    "name": "TeamsList",
-                    "target": "TeamsList"
+                    "name": "MatchesList",
+                    "target": "MatchesList"
                 },
                 {
-                    "pattern": "Teams({key}):?query:",
-                    "name": "TeamsObjectPage",
-                    "target": "TeamsObjectPage"
+                    "pattern": "Matches({key}):?query:",
+                    "name": "MatchesObjectPage",
+                    "target": "MatchesObjectPage"
                 }
             ],
             "targets": {
-                "TeamsList": {
+                "MatchesList": {
                     "type": "Component",
-                    "id": "TeamsList",
+                    "id": "MatchesList",
                     "name": "sap.fe.templates.ListReport",
                     "options": {
                         "settings": {
-                            "entitySet": "Teams",
+                            "entitySet": "Matches",
                             "variantManagement": "Page",
                             "navigation": {
-                                "Teams": {
+                                "Matches": {
                                     "detail": {
-                                        "route": "TeamsObjectPage"
+                                        "route": "MatchesObjectPage"
                                     }
                                 }
                             }
                         }
                     }
                 },
-                "TeamsObjectPage": {
+                "MatchesObjectPage": {
                     "type": "Component",
-                    "id": "TeamsObjectPage",
+                    "id": "MatchesObjectPage",
                     "name": "sap.fe.templates.ObjectPage",
                     "options": {
                         "settings": {
-                            "entitySet": "Teams"
+                            "entitySet": "Matches"
                         }
                     }
                 }
