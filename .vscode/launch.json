@@ -2,5 +2,31 @@
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
-  "configurations": []
+  "configurations": [
+    {
+      "name": "Run bundesliga-1",
+      "request": "launch",
+      "type": "node",
+      "cwd": "${workspaceFolder}/bundesliga",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-n"
+      ],
+      "args": [
+        "--",
+        "cds",
+        "run",
+        "--in-memory?"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "envFile": "${workspaceFolder}/bundesliga/.env1",
+      "env": {
+        "run.config": "{\"handlerId\":\"cap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/bundesliga\\\",\\\"profileName\\\":\\\"CAPDefaultProfile\\\"}\"}"
+      }
+    }
+  ]
 }

@@ -11,7 +11,7 @@ entity Teams : managed {
   goal_difference   : Integer;
 }
 
-entity matches : cuid, managed {
+entity Matches : cuid, managed {
   hometeam : Association to Teams;
   awayteam : Association to Teams;
   goals_hometeam : Integer;

@@ -23,11 +23,11 @@ annotate service.Matches with @(
         ],
         FieldGroup#Matches:{
             Data: [
-                {Value: hometeam_ID, Label: 'HomeTeam'}, // klappt nicht mit hometeam.name
+                {Value: hometeam_ID, Label: 'HomeTeam'},
                 {Value: goals_hometeam, Label: 'Goals HomeTeam'},
                 {Value: awayteam_ID, Label: 'AwayTeam'},
-                {Value: goals_awayteam, Label: 'Goals AwayTeam'},
-                {$Type: 'UI.DataFieldForAction', Label: 'Submit', Action: 'ResultService.submitResult', Inline: true}
+                {Value: goals_awayteam, Label: 'Goals AwayTeam'}
+                
             ]
         }
     }
